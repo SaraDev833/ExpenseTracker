@@ -118,7 +118,7 @@ if (!editId && (!item.trim() || !amount.trim())) {
       
           <div className="flex flex-col">
             <p className="text-white font-semibold">{expense.item}</p>
-            <span className="text-slate-400 text-xs">{expense.id}</span>
+            <span className="text-slate-400 text-xs"> {new Date(expense.id).toLocaleDateString()}</span>
           </div>
 
           {/* Amount */}
