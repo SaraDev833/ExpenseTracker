@@ -100,7 +100,7 @@ if (!editId && (!item.trim() || !amount.trim())) {
 
         {/* Add Button */}
         <button className="w-full mt-4 bg-indigo-600 hover:bg-indigo-500 transition text-white font-semibold py-2 rounded-lg shadow-lg" onClick={submit}>
-          Add Expense
+        {editId?"Update Expense": "Add Expense"}
         </button>
 
         {/* Search */}
